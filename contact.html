@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+    <title>
+        Contact Us
+    </title>
+</head>
+
+<body> 
+    <h1>Contact us</h1>
+    
+    <form>
+        <div>
+            <label for="first-name">First Name: </label>
+            <input id="first-name" type="text" placeholder="first name">
+            <label for="surname">Surname: </label>
+            <input id="surname" type="text" placeholder="surname">
+        </div>
+        <div>
+            <label for="male">Male: </label>
+            <input name="male" id=male type="radio">
+            <label for="female">Female: </label>
+            <input name="female" id=female type="radio">
+            <label for="other">Other: </label>
+            <input name="other" id=other type="radio">
+        </div>
+        <div>
+            <label for="email">Email: </label>
+            <input id=email type="email" placeholder="email" required>
+            <label for="password">Password: </label>
+            <input name="password" id=password type="password" placeholder="password" pattern=".{5,10}" required title="5 to 10 chars min">
+        </div>
+        <div>
+            <label for="birthday">Birthday: </label>
+            <input name="birthday" id=birthday type="date">
+        </div>
+        <div>
+            <label for="conditions">I agree to the terms and conditions</label>
+            <input name="agreed" id="conditions" type="checkbox" required>
+        </div>
+        <div>
+            <button>Submit</button>
+        </div>
+    </form>
+</body>
+
+</html>
