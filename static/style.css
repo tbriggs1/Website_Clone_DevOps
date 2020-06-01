@@ -1,0 +1,19 @@
+h1 {
+    color: #1A497F;
+    border: 5px solid purple;
+    
+}
+
+li {
+    color: yellow;
+}
+
+body {
+    background-image: url("images/401352_muay-thai-wallpapers-mobile-iphone-6s-galaxy-hd-iphones-wallpapers_800x1204_h.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#special{
+    color: seagreen;
+}
