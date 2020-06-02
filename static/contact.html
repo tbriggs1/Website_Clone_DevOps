@@ -1,48 +1,57 @@
+</html>
+
 <!DOCTYPE html>
+
 <html>
+<head>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
 
-<head> 
     <title>
-        Contact Us
-    </title>
-</head>
-
-<body> 
-    <h1>Contact us</h1>
     
-    <form>
-        <div>
-            <label for="first-name">First Name: </label>
-            <input id="first-name" type="text" placeholder="first name">
-            <label for="surname">Surname: </label>
-            <input id="surname" type="text" placeholder="surname">
-        </div>
-        <div>
-            <label for="male">Male: </label>
-            <input name="male" id=male type="radio">
-            <label for="female">Female: </label>
-            <input name="female" id=female type="radio">
-            <label for="other">Other: </label>
-            <input name="other" id=other type="radio">
-        </div>
-        <div>
-            <label for="email">Email: </label>
-            <input id=email type="email" placeholder="email" required>
-            <label for="password">Password: </label>
-            <input name="password" id=password type="password" placeholder="password" pattern=".{5,10}" required title="5 to 10 chars min">
-        </div>
-        <div>
-            <label for="birthday">Birthday: </label>
-            <input name="birthday" id=birthday type="date">
-        </div>
-        <div>
-            <label for="conditions">I agree to the terms and conditions</label>
-            <input name="agreed" id="conditions" type="checkbox" required>
-        </div>
-        <div>
-            <button>Submit</button>
-        </div>
-    </form>
+        Muay Thai Kiatphontip
+    </title>
+</head>    
+    
+<body>
+
+    
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+              <img src="images/Kiatphontipuk-Brand.png" width="170" height="50" class="d-inline-block align-top" alt="" loading="lazy">
+            </a>
+            <ul class="nav navbar-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="trainers.html">Trainers</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Classes</a></li>
+                <li><a href="contact.html">Timetable</a></li>
+            </ui>
+          </nav>
+    
+          <h1>Contact us</h1>
+    
+          <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+      
+      
+      
+<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
 
 </html>
