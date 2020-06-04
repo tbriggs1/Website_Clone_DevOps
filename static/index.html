@@ -15,49 +15,51 @@
 <body>
         
 
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background: grey;">
-            <a class="navbar-brand" href="#"><img src="images/Kiatphontipuk-Brand.png"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto ">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Trainers</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Gallery</a>
-                  </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Timetable</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                  </li>  
-              </ul>
-              <ul class="navbar-nav ">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Register</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Login</a>
-                  </li>
-              </ul>
-            </div>
-          </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="main_nav">
+        <a class="navbar-brand" href="#"><img src="images/Kiatphontipuk-Brand.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" aria-label="Toggle Navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto ">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="trainers.html">Trainers<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Timetable</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>  
+          </ul>
+
+          <ul class="navbar-nav " id="login">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Register</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Login</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+
 
           
-          <div class = "header-container">
+          <div class = "header-container"></div>
             <div class = "video-container">
                 <video id="videobackground" class="video-fluid z-depth-2" autoplay loop controls muted>
                     <source src="videos/index-vid.mp4" type="video/mp4" />
             </div>
             <h3>Welcome to KiatphontipUK Muay Thai Boxing School</h3>
-            <div class="container">
+            <div class="container text-center d-md-none d-lg-block">
                 <div class="row">
                     <div class="col">
                         <ul id="headerlist1">
@@ -74,13 +76,18 @@
                     </div>           
                 </div>
              </div>
-    
+    </div>
+
+    <div class="divider">
+        <p>1</p>
+    </div>
+
              <section id="gallery">
                 <div class=container>
                     <div class="row">
                         <div class="col-lg-4">
-                            <div class="card"> 
-                                <img class="card-img-top" src="images/istockphoto-1150770258-170667a.jpg" alt="">
+                            <div class="card h-100 one"> 
+                                <img class="card-img-top" src="images/wwwmuaythaikiatp.jpeg" alt="">
                                 <div class=card-body>
                                     <h5>About Muay Thai</h5>
                                     <p class="card-text">Muay Thai / Thai kick boxing is the national sport of Thailand.
@@ -88,30 +95,31 @@
                                          Muay Thai training develops cardio-vascular endurance, devasting power, speed and fighting spirit.
                                         
                                         </p>
-                                    <a href="" class="btn btn-primary btn-sm">Button</a>
+                                    <a href="https://en.wikipedia.org/wiki/Muay_Thai" class="btn btn-primary btn-sm b1">Learn More</a>
                                  </div>
                             </div>
                         </div>
                         <div class="col-lg-4">
-                            <div class="card"> 
-                                <img class="card-img-top" src="images/dsc6193.jpeg" alt="">
+                            <div class="card h-100 two"> 
+                                <img class="card-img-top order-1" src="images/dsc6193.jpeg" alt="">
                                 <div class=card-body>
                                     <h5>The Gym</h5>
-                                    <p class="card-text">Whether your a beginner or have martial arts background we are here to extend your knowledge of the traditional Muay Thai style of Kickboxing, taking you from novice to competition level if you require. 
+                                    <p class="card-text">Whether your a beginner or have martial arts background we are here to extend your knowledge of the traditional Muay Thai style of Kickboxing, taking you from novice to competition level if you require.  -->
                                         If you are not quite sure if it's for you just give us a call and we will be happy to give you some guidance and book you in for an initial training session.</p>
-                                    <a href="" class="btn btn-primary btn-sm">Button</a>
+                                    <a href="" class="btn btn-primary btn-sm but2">Button</a>
                                  </div>   
                                  </div>
                                  </div>
                         <div class="col-lg-4">
-                            <div class="card"> 
+                            <div class="card h-100 three"> 
                                 <img class="card-img-top" src="images/joespic2.jpeg" alt="">
                                 <div class=card-body>
                                     <h5>Trainers</h5>
-                                    <p class="card-text">All our training sessions and classes are based in Leeds we do however offer 121 tuition starting at £30.00 per hour. Deals are available for block bookings.
+                                    <p class="card-text">All our training sessions and classes are based in Leeds we do however offer 121 tuition starting at £30.00 per hour. Deals are available for block bookings. -->
                                         Our trainers have a great background in martial arts and can help you specialise in the style of muay thai
+                                        
                                     </p>
-                                    <a href="" class="btn btn-primary btn-sm">Button</a>
+                                    <a href="" class="btn btn-primary btn-sm bt3">Button</a>
                                  </div>
                                 </div>
                             </div>

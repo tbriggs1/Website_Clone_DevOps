@@ -1,0 +1,26 @@
+body{
+    background: grey;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-size: 14px;
+}
+
+#main_nav{
+    font-size: 1.5rem;
+}
+
+#main_nav .nav-link:hover{
+    color: blue;
+}
+
+.content{
+    margin-top: 15px;
+}
+
+.content-header4{
+    margin-top:110px;
+    border-bottom: 2px solid black
+}
+.navbar.scrolled{
+    background: #54524c;
+    opacity: 0.4;
+}
