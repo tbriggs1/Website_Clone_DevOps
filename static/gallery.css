@@ -1,9 +1,40 @@
-body {
-    background-color: #333333;
-    padding-top: 70px;
+body{
+    background: grey;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-size: 14px;
 }
 
-.jumbotron {
-    color: #797674;
-    background: #DAD3D3
+#main_nav{
+    font-size: 1.5rem;
+}
+
+#main_nav .index:hover{
+    border-bottom: 2px solid red;
+}
+
+#main_nav .trainers:hover{
+    border-bottom: 2px solid blue;
+}
+#main_nav .gallery:hover{
+    border-bottom: 2px solid green;
+}
+#main_nav .timetable:hover{
+    border-bottom: 2px solid yellow;
+}
+#main_nav .contact:hover{
+    border-bottom: 2px solid purple;
+}
+
+.content{
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.content-header4{
+    margin-top:110px;
+    border-bottom: 2px solid black
+}
+.navbar.scrolled{
+    background: #54524c;
+    transition: background 1500ms;
 }

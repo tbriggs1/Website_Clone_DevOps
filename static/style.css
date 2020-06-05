@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-color: grey;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
     font-size: 14px;
 }
@@ -41,7 +41,7 @@ h3{
     margin-right: auto;
     margin-left: auto;
     margin-top: 50px;
-    border: 3px solid white;
+    
     padding: 10px;
     border-radius: 15px;
     width: 700px;
@@ -49,32 +49,7 @@ h3{
     font-size: 25px;
 }
 
-#headerlist1{
-    color: black;
-    z-index: 1;
-    text-align: left;
-    margin-right: auto;
-    margin-left: 180px;
-    margin-top: 50px;
-    width: 700px;
-    letter-spacing: 3px;
-    font-size: 20px;
-}
-#headerlist2{
-    color: black;
-    border: 2px solid white;
-    background: grey;
-    z-index: 1;
-    text-align: auto;
-    margin-right: auto;
-    margin-left: 600px;
-    margin-top: -110px;
-    width: 700px;
-    letter-spacing: 3px;
-    font-size: 20px;
-    opacity: 0.30;
-    }
-    
+
 .desc{
     background-color: whitesmoke;
     margin-top: 340px;
@@ -140,6 +115,54 @@ h3{
     font-size: 1.5rem;
 }
 
-#main_nav .nav-link:hover{
-    color: blue;
+
+
+.textbox{
+    z-index: 1;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 150px;
+    border: 3px solid white;
+    padding: 10px;
+    border-radius: 15px;
+    width: 700px;
+    background: grey;
+    color: white;
+    opacity: 0.9;
+}
+
+.navbar.scrolled{
+    background: #54524c;
+    transition: background 1500ms;
+}
+
+.fb{
+    padding-left: 40px;
+    margin-top: 5px;
+}
+
+.email{
+    margin-left:36px;
+}
+
+.banner{
+    margin-left:30px;
+}
+
+#main_nav .index:hover{
+    border-bottom: 2px solid red;
+}
+
+#main_nav .trainers:hover{
+    border-bottom: 2px solid blue;
+}
+#main_nav .gallery:hover{
+    border-bottom: 2px solid green;
+}
+#main_nav .timetable:hover{
+    border-bottom: 2px solid yellow;
+}
+#main_nav .contact:hover{
+    border-bottom: 2px solid purple;
 }

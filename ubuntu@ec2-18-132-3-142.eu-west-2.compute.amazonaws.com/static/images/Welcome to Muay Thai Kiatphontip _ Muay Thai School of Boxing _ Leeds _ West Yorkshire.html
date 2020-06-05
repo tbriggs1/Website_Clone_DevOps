@@ -1,0 +1,463 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0034)http://muaythai-kiatphontip.co.uk/ -->
+<html><script>(function installFakeGeolocationCode() {
+        var timerId = null;
+        if (!navigator.geolocation) {
+            return;
+        }
+        navigator.geolocation.getCurrentPosition_ = navigator.geolocation.getCurrentPosition;
+        navigator.geolocation.watchPosition_ = navigator.geolocation.watchPosition;
+        navigator.geolocation.clearWatch_ = navigator.geolocation.clearWatch;
+
+        navigator.geolocation.clearWatch = function (id) {
+            window.clearInterval(id);
+        };
+
+        function sendBackResponse (successCb, errorCb, options, jsonedResponse) {
+            var response = JSON.parse(jsonedResponse);
+            if (response.isEnabled) {
+                successCb({ 'coords': { 'latitude': response.lat, 'longitude': response.lng,
+                    'accuracy': response.accuracy }, 'timestamp': new Date().getTime() });
+            } else {
+                navigator.geolocation.getCurrentPosition_(successCb, errorCb, options);
+            }
+        }
+
+        function createGetFakePosition(successCb, errorCb, options) {
+            return function () {
+                var positionElement = document.getElementById('fake_position_meta');
+                if (!positionElement) {
+                    var interval = setInterval(function() {
+                        positionElement = document.getElementById('fake_position_meta');
+                        if (positionElement) {
+                            clearInterval(interval);
+                            sendBackResponse(successCb, errorCb, options, positionElement.getAttribute('content'));
+                        }
+                    }, 200 /* ms */);
+                } else {
+                    // we already have the div, no need for intervals etc.
+                    sendBackResponse(successCb, errorCb, options, positionElement.getAttribute('content'));
+                }
+            };
+        };
+
+        navigator.geolocation.getCurrentPosition = function (cb1, cb2, options) {
+            var getFakePosition = createGetFakePosition(cb1, cb2, options);
+            getFakePosition();
+        };
+
+        navigator.geolocation.watchPosition = function (cb1, cb2, options) {
+            var getFakePosition = createGetFakePosition(cb1, cb2, options);
+            getFakePosition();
+            if (timerId) {
+                window.clearInterval(timerId);
+            }
+            timerId = window.setInterval(getFakePosition, 5 * 1000);
+            return timerId;
+        };
+    })();</script><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<script src="./Welcome to Muay Thai Kiatphontip _ Muay Thai School of Boxing _ Leeds _ West Yorkshire_files/prototype.js.download" type="text/javascript">
+</script>
+<script src="./Welcome to Muay Thai Kiatphontip _ Muay Thai School of Boxing _ Leeds _ West Yorkshire_files/scriptaculous.js.download" type="text/javascript">
+</script><script type="text/javascript" src="./Welcome to Muay Thai Kiatphontip _ Muay Thai School of Boxing _ Leeds _ West Yorkshire_files/effects.js.download"></script>
+
+<title>Welcome to Muay Thai Kiatphontip | Muay Thai School of Boxing | Leeds | West Yorkshire</title>
+<meta name="viewport" content="width = 980, minimum-scale = 0.25, maximum-scale = 1.60">
+<meta name="Description" content="Muay Thai Boxing School, Learn the art of Muay Thai Boxing at our Leeds Training Studio with our experienced trainers who will guide you right from the start upto competition level.">
+<meta name="Keywords" content="Muay Thai, Boxing, Boxerscise, Karate, Judo, MMA, Leeds, Training, Workout, Martial Arts, Fighting, Clothing, Muay Thai Clothing, Fight Training, Classes, Muay Thai Classes, Boxing Classes, Kick Boxing, Kick.">
+<meta name="Author" content="Design Build &amp; Photography by www.multo-creative.co.uk | © 2013 www.kiatphontipuk.co.uk">
+<style type="text/css">
+<!-- 
+body { margin:0px; background-color:#000; height:100% }
+html { height:100% }
+form { margin:0px }
+img { margin:0px; border-style:none }
+button { margin:0px; border-style:none; padding:0px; background-color:transparent; vertical-align:top }
+p:first-child { margin-top:0px }
+table { empty-cells:hide }
+.f-sp { font-size:1px; visibility:hidden }
+.f-lp { margin-bottom:0px }
+.f-fp { margin-top:0px }
+.f-x1 {  }
+.f-x2 {  }
+.f-x3 {  }
+em { font-style:italic }
+h1 { font-weight:bold; font-size:18px }
+h1:first-child { margin-top:0px }
+h2 { font-weight:bold; font-size:16px }
+h2:first-child { margin-top:0px }
+h3 { font-weight:bold; font-size:14px }
+h3:first-child { margin-top:0px }
+strong { font-weight:bold }
+.style3 { color:#fff; font-family:Trebuchet MS,Arial,Helvetica,sans-serif; font-size:9px; text-align:right }
+.style6 { color:#fff; font-family:Trebuchet MS,Arial,Helvetica,sans-serif; font-size:11px; margin-left:0px; margin-right:0px; text-indent:0px; text-align:left }
+.style11 { color:#fff; font-size:12px }
+.style10 { font-size:12px }
+.style12 { color:#f00; font-size:12px }
+.style1 { color:#ffec00; font-family:Trebuchet MS,Arial,Helvetica,sans-serif; font-size:11px; margin-left:0px; margin-right:0px; text-indent:0px; text-align:left }
+.style4 { color:#fff; font-size:24px }
+.style22 { color:#fff; font-size:24px }
+.style21 { color:#000; font-family:Trebuchet MS,Arial,Helvetica,sans-serif; font-weight:bold; font-size:11px; margin-left:0px; margin-right:0px; text-indent:0px; text-align:left }
+.style9 { color:#fff }
+.style5 { color:#fff; font-family:Trebuchet MS,Arial,Helvetica,sans-serif; font-size:18px; margin-left:0px; margin-right:0px; text-indent:0px; text-align:left }
+.style34 { color:#000; font-family:Trebuchet MS,Arial,Helvetica,sans-serif; font-size:48px; margin-left:0px; margin-right:0px; text-indent:0px; text-align:left }
+.style27 { color:#333; font-family:Trebuchet MS,Arial,Helvetica,sans-serif; font-weight:bold; font-size:11px; margin-left:0px; margin-right:0px; text-indent:0px; text-align:left }
+.style17 { color:#000; font-weight:bold; font-size:14px }
+.style57 { color:#000; font-size:14px }
+.style55 { color:#000; font-family:Trebuchet MS,Arial,Helvetica,sans-serif; font-size:14px; margin-left:0px; margin-right:0px; text-indent:0px; text-align:left }
+.style52 { color:#900 }
+.style29 { color:#000; font-family:Trebuchet MS,Arial,Helvetica,sans-serif; font-size:12px; margin-left:0px; margin-right:0px; text-indent:0px; text-align:left }
+.style54 { color:#000; font-family:Trebuchet MS,Arial,Helvetica,sans-serif; font-size:12px }
+-->
+</style>
+<!--[if lt IE 7]>
+<link rel=stylesheet type="text/css" href="css/ie6.css">
+<![endif]-->
+<link rel="apple-touch-icon" href="http://muaythai-kiatphontip.co.uk/Resources/iphone-home-icon-kiatphontipuk.png"><link rel="shortcut icon" href="http://muaythai-kiatphontip.co.uk/Resources/Favicon.png" type="image/png">
+<link rel="icon" href="http://muaythai-kiatphontip.co.uk/Resources/Favicon.png" type="image/png">
+<script type="text/javascript">//<![CDATA[
+
+function FWFindLayer(lay)
+{
+	if (lay)
+	{
+		if (document.layers) 
+			return document[lay];
+		else if (document.getElementById)
+			return document.getElementById(lay).style;
+		else if (document.all) 
+			return document.all[lay].style;
+	}
+	return null;
+}
+
+
+function FWShowHideLayerFade(lay, vis, ch, duration)
+{
+	if (ch && lay != "") 
+	{
+		vis = (vis) ? "visible" : "hidden";
+		var obj = FWFindLayer(lay);
+		if (obj && obj.visibility != vis) 
+		{
+			if(vis == "visible")
+			{
+				obj.visibility = vis;
+				new Effect.Appear(lay, {duration:duration, delay:null});
+			}
+			else
+			{
+				new Effect.Fade(lay, {duration:duration, delay:null, afterFinish:function(){obj.visibility = vis}});
+			}
+		} 
+	}
+}
+
+var fwSeq= new Object;
+fwSeq['1']=1;
+fwSeq['2']=2;
+fwSeq['3']=3;
+fwSeq['4']=4;
+fwSeq['5']=5;
+fwSeq['6']=6;
+fwSeq['7']=7;
+fwSeq['8']=8;
+
+var fwCurrSeq=0;
+var fwCurrSeqDown=false;
+var fwPlaySeqTimer=true;
+
+function FWSeqTimer()
+{
+	if(fwPlaySeqTimer)
+	{
+		if (fwCurrSeqDown)
+			FW_Hit(top.frames,'Indigo',fwSeq[fwCurrSeq],0);
+		else
+		{
+			fwCurrSeq++;
+			if (fwCurrSeq > 8)
+				fwCurrSeq = 1;
+			FW_Hit(top.frames,'Indigo',fwSeq[fwCurrSeq],1);
+		}
+		fwCurrSeqDown=!fwCurrSeqDown;
+		setTimeout("FWSeqTimer();",1500);
+	}
+}
+
+function FWCallHit(func,targNum,msg)
+{
+	if(func)
+		for (var i in func)
+			func[i](targNum,msg);
+}
+function FW_Hit(frameset,chain,targNum,msg)
+{
+	if (frameset.length)
+		for (var i=0 ; i <frameset.length ; i++)
+		{
+			FW_Hit(frameset[i].frames,chain,targNum,msg);
+			FWCallHit(top["FT_"+chain],targNum,msg);
+			try{
+				FWCallHit(frameset[i].window["FT_"+chain],targNum,msg);
+			} catch(err){}
+		}
+	else
+		FWCallHit(window["FT_"+chain],targNum,msg);
+}
+
+
+function FWStripFileFromFilterString(filterString)
+{
+	var start,end;
+	var strSrc = "src='";
+	var strRes = "";
+
+	start = filterString.indexOf(strSrc);
+
+	if(start != -1)
+	{
+		start += strSrc.length;
+		
+		end = filterString.indexOf("',",start);
+		if(end != -1)
+		{
+			strRes = filterString.substring(start,end);
+		}
+	}
+
+	return strRes;
+}
+
+
+var fwIsNetscape = navigator.appName == 'Netscape';
+
+
+fwLoad = new Object;
+function FWLoad(image)
+{
+	if (!document.images)
+		return null;
+	if (!fwLoad[image])
+	{
+		fwLoad[image]=new Image;
+		fwLoad[image].src=image;
+	}
+	return fwLoad[image].src;
+}
+
+
+fwRestore = new Object;
+function FWRestore(msg,chain) 
+{
+	if (document.images) 
+		for (var i in fwRestore)
+		{
+			var r = fwRestore[i];
+			if (r && (!chain || r.chain==chain) && r.msg==msg)
+			{
+				r.src = FWLoad(r.old);
+				fwRestore[i]=null;
+			}
+		}
+}
+
+
+function FWLSwap(name,msg,newImg,layer,chain,trigger) 
+{
+	var r = fwRestore[name];
+	if (document.images && (!r || r.msg < msg)) 
+	{
+		var uselayers = fwIsNetscape && document.layers && layer != '';
+		var hld;
+		if (uselayers)
+			hld = document.layers[layer].document;
+		else
+			hld = document;
+		var im = hld.getElementById(name);
+		if (!im.old)
+		{
+			if(usingIEFix && im.runtimeStyle.filter)
+				im.old = FWStripFileFromFilterString(im.runtimeStyle.filter);
+			else
+				im.old = im.src;
+		}
+		
+		im.msg = msg;
+		im.chain = chain;
+		im.trigger = trigger;
+		if (newImg) im.src = FWLoad(newImg);
+		fwRestore[name] = im;
+	}
+}
+
+
+fwHit = new Object;
+function FWSlave(frameset,chain,targNum,msg)
+{
+	if (msg==1) fwHit[chain]=targNum;
+	FW_Hit(frameset,chain,targNum,1);
+}
+
+function FWSRestore(frameset,chain)
+{
+	var hit=fwHit[chain];
+	if (hit)
+		FW_Hit(frameset,chain,hit,0);
+	fwHit[chain]=null;
+}
+
+function FWPreload()
+{
+	FWLoad("Resources/facebook_logo.png");
+	FWLoad("");
+	FWLoad("Resources/Classes.png");
+	FWLoad("Resources/Contact.png");
+	FWLoad("Resources/Gallery.png");
+	FWLoad("Resources/Trainers.png");
+	FWLoad("Resources/Home1.png");
+}
+document.write("<style type=\"text/css\">");
+document.write("#item2, #item2a, #item2a1, #item2a1a, #item2a1b, #item2a1b1, #item2a1b1a1  { -moz-opacity: .999999; }");
+document.write("<\/style>");
+//]]></script><style type="text/css">#item2, #item2a, #item2a1, #item2a1a, #item2a1b, #item2a1b1, #item2a1b1a1  { -moz-opacity: .999999; }</style>
+<script type="text/javascript">//<![CDATA[
+var usingIEFix = false;
+//]]></script>
+
+<!--[if lt IE 7]>
+<script type="text/javascript">//<![CDATA[
+usingIEFix = true;
+//]]></script>
+<![endif]-->
+
+
+</head><meta id="fake_position_meta" name="fake_geolocation_chrome_extension" content="{}">
+<body onload="FWSeqTimer();;FWPreload()" data-gr-c-s-loaded="true">
+<div id="PageDiv" style="position:relative; min-height:100%; margin:auto; width:980px">
+	<div id="MuayThaiHeader1" style="position:absolute; left:0px; top:0px; width:979px; height:314px; z-index:1">
+		<img src="./Welcome to Muay Thai Kiatphontip _ Muay Thai School of Boxing _ Leeds _ West Yorkshire_files/Muay-Thai-Header 1.png" border="0" width="979" height="314" alt="MuayThaiHeader1" style="float:left"></div>
+	<div id="MuayThaiFooter" style="position:absolute; left:0px; top:664px; width:982px; height:134px; z-index:2">
+		<img src="./Welcome to Muay Thai Kiatphontip _ Muay Thai School of Boxing _ Leeds _ West Yorkshire_files/Muay-Thai-Footer.png" border="0" width="982" height="134" alt="MuayThaiFooter" style="float:left"></div>
+	<div id="item1" style="position:absolute; left:0px; top:314px; width:980px; height:347px; z-index:3">
+		<img src="./Welcome to Muay Thai Kiatphontip _ Muay Thai School of Boxing _ Leeds _ West Yorkshire_files/item1.gif" border="0" width="980" height="347" alt="item1" style="float:left">
+	</div>
+	<div id="KiatphontipUK" style="position:absolute; left:16px; top:6px; width:176px; height:37px; z-index:4">
+		<a href="http://muaythai-kiatphontip.co.uk/index.html" target="_self"><img src="./Welcome to Muay Thai Kiatphontip _ Muay Thai School of Boxing _ Leeds _ West Yorkshire_files/KiatphontipUK.png" border="0" width="176" height="37" alt="KiatphontipUK" style="float:left"></a></div>
+	<div id="KiatphontipMuayThaiStrip3" style="position:absolute; left:118px; top:121px; width:520px; height:125px; z-index:5">
+		<img src="./Welcome to Muay Thai Kiatphontip _ Muay Thai School of Boxing _ Leeds _ West Yorkshire_files/Kiatphontip-Muay-Thai-Strip3.png" border="0" width="520" height="125" alt="KiatphontipMuayThaiStrip3" style="float:left"></div>
+	<div id="item2" style="position:absolute; left:765px; top:768px; width:191px; height:15px; z-index:6; overflow:visible">
+		<p class="style3 f-lp">Design &amp; Build by www.multo-creative.co.uk</p>
+	</div>
+	<div id="item2a" style="position:absolute; left:40.215px; top:764px; width:622px; height:17px; z-index:7; overflow:visible">
+		<p class="style6 f-lp"><strong><span class="style11">© 2013 Muay Thai KIATPHONTIP</span></strong><span class="style10">  </span><span class="style12">|</span><span class="style10">  Top Floor, Stamford House  </span><span class="style12">|</span><span class="style10">  25 Cross Stamford Street  </span><span class="style12">|</span><span class="style10">  Leeds  </span><span class="style12">|</span><span class="style10">  LS7 1BA</span></p>
+	</div>
+	<div id="item2a1" style="position:absolute; left:79.467px; top:690px; width:656px; height:29px; z-index:8; overflow:visible">
+		<p class="style1 f-lp"><span class="style4">For&nbsp;further&nbsp;information:</span><strong><span class="style22">&nbsp;Call:&nbsp;07547&nbsp;000&nbsp;091</span></strong></p>
+	</div>
+	<div id="item2a1a" style="position:absolute; left:79.467px; top:724px; width:342px; height:18px; z-index:9; overflow:visible">
+		<p class="style21 f-lp"><strong><span class="style11">e-mail:&nbsp;<a href="mailto:info@muaythai-kiatphontip.co.uk" target="_blank"><span class="style9" style="text-decoration:underline">info@muaythai-kiatphontip.co.uk</span></a>&nbsp;</span></strong></p>
+	</div>
+	<div id="SimonChuTrainer1" style="position:absolute; left:16.935px; top:56px; width:200px; height:257px; z-index:10">
+		<img src="./Welcome to Muay Thai Kiatphontip _ Muay Thai School of Boxing _ Leeds _ West Yorkshire_files/Simon-Chu-Trainer1.png" border="0" width="200" height="257" alt="SimonChuTrainer1" style="float:left"></div>
+	<div id="item2a1b" style="position:absolute; left:170.122px; top:271px; width:581px; height:29px; z-index:11; overflow:visible">
+		<p class="style5 f-lp">Welcome to <strong>KiatphontipUK</strong> Muay Thai Boxing School</p>
+	</div>
+	<div id="MuayThai2" style="position:absolute; left:26px; top:330px; width:284px; height:43px; z-index:12">
+		<img src="./Welcome to Muay Thai Kiatphontip _ Muay Thai School of Boxing _ Leeds _ West Yorkshire_files/Muay-Thai-2.png" border="0" width="284" height="43" alt="MuayThai2" style="float:left"></div>
+	<div id="item2a1b1" style="position:absolute; left:321px; top:326px; width:171px; height:58px; z-index:13; overflow:hidden">
+		<p class="style34 f-lp">Boxing</p>
+	</div>
+	<div id="item2a1b1a1" style="position:absolute; left:28px; top:402px; width:445px; height:209px; z-index:14; padding:4px; overflow:visible">
+		<p class="style27"><span class="style17">About Muay Thai Boxing</span></p>
+		<p class="style55"><span class="style10">Muay Thai / Thai kick boxing is the national sport of Thailand. It is also known as </span><span class="style52"><strong><span class="style10">“the Art of Eight Limbs”</span></strong></span><span class="style10"> due to the following body part being used fists, elbows, knees, legs (kicks). Muay Thai training develops cardio-vascular endurance, devasting power, speed and fighting spirit.</span></p>
+		<p class="style29">All our training sessions and classes are based in Leeds we do however offer 121 tuition starting at £30.00 per hour. Deals are available for block bookings.</p>
+		<p class="style29 f-lp">Whether your a beginner or have martial arts background we are here to extend your knowledge of the traditional Muay Thai style of Kickboxing, taking you from <span class="style54">novice to competition level if you require. If you are not quite sure if it's for you just give us a call and we will be happy to give you some guidance and book you in for an initial training session.</span></p>
+	</div>
+	<div id="facebooklogo1" style="position:absolute; left:22.131px; top:691px; width:51px; height:51px; z-index:15">
+		<a href="https://www.facebook.com/pages/Kiatphontip-Muay-Thai-Gym/360432870633781" target="_blank" onmouseover="FWRestore(1,&#39;Indigo&#39;);FWSRestore(top.frames,&#39;Indigo&#39;)" onmouseout="FWRestore(1,&#39;Indigo&#39;);FWSRestore(top.frames,&#39;Indigo&#39;)"><img src="./Welcome to Muay Thai Kiatphontip _ Muay Thai School of Boxing _ Leeds _ West Yorkshire_files/facebook_logo.png" border="0" width="51" height="51" alt="facebooklogo1" style="float:left"></a></div>
+	<div id="wwwmuaythaikiatphontipcouk13" style="position: absolute; left: 497px; top: 329px; width: 461px; height: 319px; z-index: 16; visibility: hidden; display: none;">
+		<img src="./Welcome to Muay Thai Kiatphontip _ Muay Thai School of Boxing _ Leeds _ West Yorkshire_files/wwwmuaythaikiatp.jpeg" border="0" width="462" height="319" alt="wwwmuaythaikiatphontipcouk13" style="float:left">
+	</div>
+	<div id="DSC6193" style="position: absolute; left: 497px; top: 329px; width: 461px; height: 319px; z-index: 17; visibility: hidden; display: none;">
+		<img src="./Welcome to Muay Thai Kiatphontip _ Muay Thai School of Boxing _ Leeds _ West Yorkshire_files/dsc6193.jpeg" border="0" width="462" height="319" alt="DSC6193" style="float:left">
+	</div>
+	<div id="GymPano6" style="position: absolute; left: 498px; top: 329px; width: 461px; height: 319px; z-index: 18; visibility: hidden; display: none;">
+		<img src="./Welcome to Muay Thai Kiatphontip _ Muay Thai School of Boxing _ Leeds _ West Yorkshire_files/gympano6.jpeg" border="0" width="462" height="319" alt="GymPano6" style="float:left">
+	</div>
+	<div id="wwwmuaythaikiatphontipcouk30" style="position: absolute; left: 497px; top: 329px; width: 461px; height: 319px; z-index: 19; visibility: visible;">
+		<img src="./Welcome to Muay Thai Kiatphontip _ Muay Thai School of Boxing _ Leeds _ West Yorkshire_files/wwwmuaythaikiatpa.jpeg" border="0" width="462" height="319" alt="wwwmuaythaikiatphontipcouk30" style="float:left">
+	</div>
+	<div id="joespic2" style="position: absolute; left: 498px; top: 329px; width: 461px; height: 319px; z-index: 20; visibility: hidden; display: none;">
+		<img src="./Welcome to Muay Thai Kiatphontip _ Muay Thai School of Boxing _ Leeds _ West Yorkshire_files/joespic2.jpeg" border="0" width="462" height="319" alt="joespic2" style="float:left">
+	</div>
+	<div id="wwwmuaythaikiatphontipcouk1" style="position: absolute; left: 498px; top: 329px; width: 461px; height: 319px; z-index: 21; visibility: hidden; display: none;">
+		<img src="./Welcome to Muay Thai Kiatphontip _ Muay Thai School of Boxing _ Leeds _ West Yorkshire_files/wwwmuaythaikiatpb.jpeg" border="0" width="462" height="319" alt="wwwmuaythaikiatphontipcouk1" style="float:left">
+	</div>
+	<div id="Classes" style="position:absolute; left:777px; top:2px; width:91px; height:41px; z-index:22">
+		<a href="http://muaythai-kiatphontip.co.uk/muaythaikiatphoa.html" target="_self" onmouseover="FWRestore(1,&#39;Indigo&#39;);FWSRestore(top.frames,&#39;Indigo&#39;)" onmouseout="FWRestore(1,&#39;Indigo&#39;);FWSRestore(top.frames,&#39;Indigo&#39;)"><img src="./Welcome to Muay Thai Kiatphontip _ Muay Thai School of Boxing _ Leeds _ West Yorkshire_files/Classes.png" border="0" width="91" height="41" alt="Classes" style="float:left"></a></div>
+	<div id="Classes1" style="position:absolute; left:872px; top:2px; width:91px; height:41px; z-index:23">
+		<a href="http://muaythai-kiatphontip.co.uk/contactmuaythaik.html" target="_self" onmouseover="FWRestore(1,&#39;Indigo&#39;);FWSRestore(top.frames,&#39;Indigo&#39;)" onmouseout="FWRestore(1,&#39;Indigo&#39;);FWSRestore(top.frames,&#39;Indigo&#39;)"><img src="./Welcome to Muay Thai Kiatphontip _ Muay Thai School of Boxing _ Leeds _ West Yorkshire_files/Contact.png" border="0" width="91" height="41" alt="Classes1" style="float:left"></a></div>
+	<div id="Contact1" style="position:absolute; left:681px; top:2px; width:91px; height:41px; z-index:24">
+		<a href="http://muaythai-kiatphontip.co.uk/www.muaythai-kia.html" target="_self" onmouseover="FWRestore(1,&#39;Indigo&#39;);FWSRestore(top.frames,&#39;Indigo&#39;)" onmouseout="FWRestore(1,&#39;Indigo&#39;);FWSRestore(top.frames,&#39;Indigo&#39;)"><img src="./Welcome to Muay Thai Kiatphontip _ Muay Thai School of Boxing _ Leeds _ West Yorkshire_files/Gallery.png" border="0" width="91" height="41" alt="Contact1" style="float:left"></a></div>
+	<div id="Gallery1" style="position:absolute; left:586px; top:2px; width:91px; height:41px; z-index:25">
+		<a href="http://muaythai-kiatphontip.co.uk/muaythaikiatphon.html" target="_self" onmouseover="FWRestore(1,&#39;Indigo&#39;);FWSRestore(top.frames,&#39;Indigo&#39;)" onmouseout="FWRestore(1,&#39;Indigo&#39;);FWSRestore(top.frames,&#39;Indigo&#39;)"><img src="./Welcome to Muay Thai Kiatphontip _ Muay Thai School of Boxing _ Leeds _ West Yorkshire_files/Trainers.png" border="0" width="91" height="41" alt="Gallery1" style="float:left"></a></div>
+	<div id="Home1" style="position:absolute; left:490px; top:2px; width:91px; height:41px; z-index:26">
+		<a href="http://muaythai-kiatphontip.co.uk/index.html" target="_self" onmouseover="FWRestore(1,&#39;Indigo&#39;);FWSRestore(top.frames,&#39;Indigo&#39;)" onmouseout="FWRestore(1,&#39;Indigo&#39;);FWSRestore(top.frames,&#39;Indigo&#39;)"><img src="./Welcome to Muay Thai Kiatphontip _ Muay Thai School of Boxing _ Leeds _ West Yorkshire_files/Home1.png" border="0" width="91" height="41" alt="Home1" style="float:left"></a></div>
+	<div id="three" style="position: absolute; left: 498px; top: 329px; width: 461px; height: 319px; z-index: 27; visibility: hidden; display: none;">
+		<img src="./Welcome to Muay Thai Kiatphontip _ Muay Thai School of Boxing _ Leeds _ West Yorkshire_files/three.jpeg" border="0" width="462" height="319" alt="three" style="float:left">
+	</div>
+	<div id="SimonChuKiatphontipMSA27March2010MENARENAManchester" style="position: absolute; left: 498px; top: 329px; width: 461px; height: 319px; z-index: 28; visibility: hidden; display: none;">
+		<img src="./Welcome to Muay Thai Kiatphontip _ Muay Thai School of Boxing _ Leeds _ West Yorkshire_files/simonchukiatphon.jpeg" border="0" width="462" height="319" alt="SimonChuKiatphontipMSA27March2010MENARENAManchester" style="float:left">
+	</div>
+	<div id="MuayThai" style="position:absolute; left:212px; top:-2px; width:231px; height:61px; z-index:29">
+		<img src="./Welcome to Muay Thai Kiatphontip _ Muay Thai School of Boxing _ Leeds _ West Yorkshire_files/Muay-Thai.png" border="0" width="231" height="61" alt="MuayThai" style="float:left"></div>
+	<div id="KiatphontipukBrand" style="position:absolute; left:316px; top:57px; width:333px; height:68px; z-index:30">
+		<a href="http://muaythai-kiatphontip.co.uk/index.html" target="_self"><img src="./Welcome to Muay Thai Kiatphontip _ Muay Thai School of Boxing _ Leeds _ West Yorkshire_files/Kiatphontipuk-Brand.png" border="0" width="333" height="68" alt="KiatphontipukBrand" style="float:left"></a></div>
+	<div id="jstsimonchubannner" style="position:absolute; left:574px; top:682px; width:406px; height:71px; z-index:31">
+		<img src="./Welcome to Muay Thai Kiatphontip _ Muay Thai School of Boxing _ Leeds _ West Yorkshire_files/jstsimonchubannn.jpeg" border="0" width="406" height="70" alt="jstsimonchubannner" usemap="#map1" style="float:left">
+	</div>
+	<map name="map1">
+	<area alt="item3" coords="0,0,406,66" href="http://jstnutrition.com/" target="_blank">
+	</map>
+</div>
+<script type="text/javascript">//<![CDATA[
+function FWImage_Indigo(chain,msg)
+{
+	if (chain==1)
+		FWShowHideLayerFade("wwwmuaythaikiatphontipcouk13",msg,msg,1);
+	else 
+		FWShowHideLayerFade("wwwmuaythaikiatphontipcouk13",!msg,msg,1);
+	if (chain==2)
+		FWShowHideLayerFade("DSC6193",msg,msg,1);
+	else 
+		FWShowHideLayerFade("DSC6193",!msg,msg,1);
+	if (chain==3)
+		FWShowHideLayerFade("GymPano6",msg,msg,1);
+	else 
+		FWShowHideLayerFade("GymPano6",!msg,msg,1);
+	if (chain==4)
+		FWShowHideLayerFade("wwwmuaythaikiatphontipcouk30",msg,msg,1);
+	else 
+		FWShowHideLayerFade("wwwmuaythaikiatphontipcouk30",!msg,msg,1);
+	if (chain==5)
+		FWShowHideLayerFade("joespic2",msg,msg,1);
+	else 
+		FWShowHideLayerFade("joespic2",!msg,msg,1);
+	if (chain==6)
+		FWShowHideLayerFade("wwwmuaythaikiatphontipcouk1",msg,msg,1);
+	else 
+		FWShowHideLayerFade("wwwmuaythaikiatphontipcouk1",!msg,msg,1);
+	if (chain==7)
+		FWShowHideLayerFade("three",msg,msg,1);
+	else 
+		FWShowHideLayerFade("three",!msg,msg,1);
+	if (chain==8)
+		FWShowHideLayerFade("SimonChuKiatphontipMSA27March2010MENARENAManchester",msg,msg,1);
+	else 
+		FWShowHideLayerFade("SimonChuKiatphontipMSA27March2010MENARENAManchester",!msg,msg,1);
+}
+window.FT_Indigo=new Object;
+window.FT_Indigo['0']=FWImage_Indigo;
+//]]></script>
+</body></html>
