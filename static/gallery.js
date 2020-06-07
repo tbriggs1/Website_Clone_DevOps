@@ -1,11 +1,4 @@
-let age = prompt("Please enter your age");
+var h1 = document.querySelector("h1");
+h1.style.color = "pink";
 
-if(age < 0){
-    alert("Wow no getting it here mate")
-}
-else if(age == 21){
-    alert("Happy bday")
-}
-else if(age % 2 == 1){
-    alert("Wow odd ball")
-}
+
