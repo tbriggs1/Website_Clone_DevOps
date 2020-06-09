@@ -86,9 +86,18 @@ body{
     padding-top: 2%;
 }
 
-.carousel-container{
-    width: 50%;
-    height: 50%;
-    position: absolute;
-    text-align: center;
+.carousel-inner {
+    width:640px;
+    height:490px;
+    border: 2px solid white;
+  }
+
+.jumbo{
+    margin-top: 17%;
+    background: grey;
+    padding: 5%
+}
+
+.lastpic{
+    height:490px;
 }
